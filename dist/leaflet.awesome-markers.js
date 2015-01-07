@@ -77,16 +77,16 @@
                 if(options.iconColor === 'white' || options.iconColor === 'black') {
                     iconColorClass = "icon-" + options.iconColor;
                 } else {
-                    inlineStyle += "color: " + options.iconColor + "' ";
+                    inlineStyle += "color: " + options.iconColor + ";";
                 }
             }
 
             if(options.iconRotate && options.iconRotate !== 0) {
-                inlineStyle += "-webkit-transform: rotate(" + options.iconRotate + ")";
-                inlineStyle += "-moz-transform: rotate(" + options.iconRotate + ")";
-                inlineStyle += "-o-transform: rotate(" + options.iconRotate + ")";
-                inlineStyle += "-ms-transform: rotate(" + options.iconRotate + ")";
-                inlineStyle += "transform: rotate(" + options.iconRotate + ")";
+                inlineStyle += "-webkit-transform: rotate(" + options.iconRotate + "deg);";
+                inlineStyle += "-moz-transform: rotate(" + options.iconRotate + "deg);";
+                inlineStyle += "-o-transform: rotate(" + options.iconRotate + "deg);";
+                inlineStyle += "-ms-transform: rotate(" + options.iconRotate + "deg);";
+                inlineStyle += "transform: rotate(" + options.iconRotate + "deg);";
             }
 
             return "<i " + inlineStyle + "' " + "class='" + options.extraClasses + " " + options.prefix + " " + iconClass + " " + iconSpinClass + " " + iconColorClass + "'></i>";
@@ -133,6 +133,3 @@
     };
 
 }(this, document));
-
-
-
